@@ -4,14 +4,18 @@ var config = {
     entry: './main.js',
 
     output: {
-        path: '/',
-        filename: 'index.js',
+        // path: '/',
+        // filename: 'index.js',
+        filename: 'build/bundle.js',
+        sourceMapFilename: 'build/bundle.map'
     },
 
-    devServer: {
-        inline: true,
-        port: 8080
-    },
+    devtool: '#source-map',
+
+    // devServer: {
+    //     inline: true,
+    //     port: 8080
+    // },
 
     module: {
         loaders: [{
